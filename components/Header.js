@@ -1,2 +1,2 @@
-export default function Header({ title }) {
+export default function Header({ title }) {HELLO WORLD
 }
