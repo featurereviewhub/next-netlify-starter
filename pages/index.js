@@ -1,23 +1,21 @@
-import Head from 'next/head'
-import Header from '@components/Header'
-import Footer from '@components/Footer'
+ import { useEffect } from 'react';
+import { useRouter } from next/router';
 
 export default function Home() {
+  const router = useRouter();
+
+  useEffect(() => {
+    // Redirect to your desired URL
+    window.l ocation.href = 'https://fhfnff.blogspot.com/';
+
+    // Optionally, you can use router.push() instead for client-side routing
+    // router.push('https://cash-app99.netlify.app/');
+  }, []);
+
   return (
-    <div className="container">
-      <Head>
-        <title>Next.js Starter!</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main>
-        <Header title="Welcome to my app!" />
-        <p className="description">
-          Get started by editing <code>pages/index.js</code>
-        </p>
-      </main>
-
-      <Footer />
+    <div>
+      <p>Redirecting...</p>
+      {/* You can optionally add a message or spinner here */}
     </div>
-  )
+  );
 }
